@@ -1,0 +1,35 @@
+--SELECT * FROM FilmLocations;
+--SELECT Title, Director, Writer FROM FilmLocations;
+--SELECT Title,ReleaseYear,Locations FROM FilmLocations WHERE ReleaseYear>=2001;
+--SELECT Title,ProductionCompany, Locations,ReleaseYear FROM FilmLocations WHERE Writer <> "James Cameron";
+--SELECT COUNT(*) FROM FilmLocations;
+--SELECT COUNT(Locations) FROM FilmLocations WHERE Writer="James Cameron";
+--SELECT COUNT(Locations) FROM FilmLocations WHERE Director="Woody Allen";
+--SELECT DISTINCT Title FROM FilmLocations;
+--SELECT COUNT(DISTINCT ReleaseYear) FROM FilmLocations WHERE ProductionCompany="Warner Bros. Pictures";
+--SELECT * FROM FilmLocations LIMIT 25; 
+--SELECT * FROM FilmLocations LIMIT 25 OFFSET 10;
+--SELECT DISTINCT Title FROM FilmLocations LIMIT 50;
+--SELECT DISTINCT Title FROM FilmLocations WHERE ReleaseYear=2015 LIMIT 10;  
+--SELECT DISTINCT Title FROM FilmLocations WHERE ReleaseYear=2015 LIMIT 10 OFFSET 5;
+
+
+--SELECT * FROM Instructor;
+-- INSERT INTO Instructor(ins_id,lastname,firstname,city,country)
+--VALUES(4,"bisht","noah","hill","IN"); 
+--SELECT * FROM Instructor;
+--INSERT INTO Instructor(ins_id,lastname,firstname,city,country)
+--VALUES(5,"bisht","noah","hill","US");
+--INSERT INTO Instructor(ins_id,lastname,firstname,city,country)
+--VALUES(6,"bisht","dabbu","hillmount","IN"), (7,"prksh","bisht","lan","IN");
+--SELECT * FROM Instructor
+--UPDATE Instructor
+--SET city='Toronto'
+--WHERE firstname='bisht';
+--SELECT * FROM Instructor;
+--DELETE FROM Instructor WHERE ins_id=5;
+--SELECT * FROM Instructor;
+--UPDATE Instructor
+--SET city='Mountrose',country='CA'
+--WHERE ins_id = 6;
+--SELECT * FROM Instructor;
